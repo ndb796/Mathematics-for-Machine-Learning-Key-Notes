@@ -55,6 +55,7 @@
 
 ### Identity Matrix
 
+* 전치행렬
 * Identity matrix is a diagonal matrix where the diagonal entries are filled with ones.
 
 ![image](https://user-images.githubusercontent.com/16822641/81257523-73b0f280-906e-11ea-9c19-e73f18e7ed7c.png)
@@ -99,3 +100,38 @@
 
 ![image](https://user-images.githubusercontent.com/16822641/81260050-2e8fbf00-9074-11ea-8dd2-28e847af0b21.png)
 
+### Row-Echelon Form
+
+* 행사다리꼴 행렬: 말 그대로 사다리꼴 형태로 값이 구성되는 행렬
+* A matrix is in row-echelon form if
+    * All rows that contains only zeros are at the bottom of the matrix.
+    * All rows that contains at least one nonzero element are on top of rows that contain only zeros.
+    * Looking at nonzero rows only, the first nonzero number from the left (also called pivot) is always strictly to the right of the pivot of the row above it.
+
+![image](https://user-images.githubusercontent.com/16822641/81261948-ee324000-9077-11ea-8bb1-2ff1023c049b.png)
+
+### Reduced Row-Echelon Form
+
+* 기약행사다리꼴 행렬
+* A matrix is in reduced row-echelon form if
+    * It is in row-echelon form.
+    * Every pivot is 1.
+    * The pivot is the only nonzero entry in its column.
+
+![image](https://user-images.githubusercontent.com/16822641/81262765-65b49f00-9079-11ea-89fa-c9fb219b7622.png)
+
+* 모든 행렬은 고유한 단 하나의 기약행사다리꼴 행렬을 가짐
+
+### Groups
+
+* vector = vector + vector or vector = scalar * vector
+* Let's formalise this idea with Group
+* Consider a set G and an operator ⊗: G × G → G defined on G.
+* G := (G, ⊗) is called group if the following holds:
+    * Closure of G under ⊗: ∀x, y ∈ G: x ⊗ y ∈ G
+    * Associativity: ∀x, y, z ∈ G: (x ⊗ y) ⊗ z = x ⊗ (y ⊗ z)
+    * Neutral element: ∃e ∈ G, ∀x ∈ G: x ⊗ e = x and e ⊗ x = x
+    * Inverse element: ∀x ∈ G, ∃y ∈ G: x ⊗ y = e and y ⊗ x = e
+    * (Abelian group) Commutative: ∀x, y ∈ G: x ⊗ y = y ⊗ x
+* 다시 말해 <b>"닫힘, 결합법칙 성립, 항등원 존재, 역원 존재"</b>가 성립한다면 그룹
+    * 예를 들어 정수 집합 Z는 일반적인 덧셈 +에 대해서 그룹
