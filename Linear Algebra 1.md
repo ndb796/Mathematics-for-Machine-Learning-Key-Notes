@@ -137,3 +137,34 @@
     * 예시) 정수 집합 Z는 덧셈에 대해 그룹
     * 예시) 성분이 모두 실수인 (n, n) 행렬 중에서 역행렬이 존재하는 경우 곱셈에 대해 그룹
     * 예시) 정수 집합 Z는 곱셈에 대해 그룹이 아님
+
+### Vector Spaces
+
+* A real-valued vector space V = (V, +, ·) is a set V with two operations
+    * vector addition +: V × V → V
+    * multiplication by scalar ·: R × V → V
+* where
+    1. (V, +) is an Abelian group
+    2. Distributivity (분배법칙):
+        * ∀λ ∈ R, x, y ∈ V: λ · (x + y) = λ · x + λ · y
+        * ∀λ, ψ ∈ R, x ∈ V: (λ + ψ) · x = λ · x + ψ · x
+    3. Associativity (결합법칙):
+        * ∀λ, ψ, x ∈ V: λ · (ψ · x) = (λψ) · x
+    4. Neutral element (항등원) with respect to the dot operation:
+        * x ∈ V: 1 · x = x
+
+### Vector Subspace
+
+* Let V = (V, +, ·) be a vector space and U ⊆ V, U != ∅.
+* Then U = (U, +, ·) is called vector subspace of V (or linear subspace) if U is a vector space with the vector space operations + and · restricted to U × U and R × U (closed).
+* We write U ⊆ V to denote a subspace U of V.
+* Figure: Which of these are vector subspace?
+
+![image](https://user-images.githubusercontent.com/16822641/81291453-bc839e00-90a4-11ea-977b-56cdeb530df1.png)
+
+### Linear Combination
+
+* Linear Combination (선형 결합)은 단순히 v1, v2, ..., vn의 모든 벡터를 더하는 것 (더할 때 각각 상수배)
+
+![image](https://user-images.githubusercontent.com/16822641/81292153-1042b700-90a6-11ea-84e8-148d735f5c47.png)
+
