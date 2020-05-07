@@ -162,9 +162,10 @@
 
 ![image](https://user-images.githubusercontent.com/16822641/81291453-bc839e00-90a4-11ea-977b-56cdeb530df1.png)
 
+* 두 번째 그림을 보자. 직선 위에서 두 점을 어떻게 잡아도, 연산을 수행한 뒤의 결과도 직선 위에 있다.
+
 ### Linear Combination
 
 * Linear Combination (선형 결합)은 단순히 v1, v2, ..., vn의 모든 벡터를 더하는 것 (더할 때 각각 상수배)
 
 ![image](https://user-images.githubusercontent.com/16822641/81292153-1042b700-90a6-11ea-84e8-148d735f5c47.png)
-
